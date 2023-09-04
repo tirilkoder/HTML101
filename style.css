@@ -1,0 +1,47 @@
+/* "*" er ein wildcard legger til CSS for alle elementer */
+
+/* legg til på alle elemneter av type <body> */
+body {
+    background-color: bisque;
+    color: darkblue;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+}
+
+section {
+    margin-top: 40px;
+}
+
+/*header{
+    background-color: rgb(219, 140, 140);
+}
+*/
+
+/*legg til på alle elementer som bruker class="navbar"*/
+.navbar {
+    background-color: rgb(193, 183, 226);
+    color: palegreen;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*legg til på elementer som har id="block-inline-elememts*/
+#block-inline-elements {
+    background-color: rgb(250, 120, 120);
+}
+
+#semantic-html {
+    background-color: rgb(181, 166, 196);
+}
+
+/*kombinerete selectorer, dette velger barne elements*/
+.navbar > nav > ul > li{
+    background-color: aquamarine;
+    display: inline;
+}
